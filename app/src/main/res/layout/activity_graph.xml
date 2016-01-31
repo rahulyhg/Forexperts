@@ -1,0 +1,129 @@
+<!--
+  Copyright 2014 Robert Baptiste
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#ffffff"
+    android:id="@+id/stockLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:contentDescription="@string/chart_description"
+        android:id="@+id/chart"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"/>
+
+    <View
+        android:background="#f3f3f3"
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <Button
+            android:background="@android:color/transparent"
+            android:id="@+id/button_1d_chart"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/one_day"
+            android:textSize="12sp"/>
+
+        <View
+            android:background="#f3f3f3"
+            android:layout_width="1dip"
+            android:layout_height="fill_parent"/>
+
+        <Button
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:id="@+id/button_5d_chart"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/five_day"
+            android:textSize="12sp"/>
+
+        <View
+            android:background="#f3f3f3"
+            android:layout_width="1dip"
+            android:layout_height="fill_parent"/>
+
+        <Button
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:id="@+id/button_1m_chart"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/one_month"
+            android:textSize="12sp"/>
+
+        <View
+            android:background="#f3f3f3"
+            android:layout_width="1dip"
+            android:layout_height="fill_parent"/>
+
+        <Button
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:id="@+id/button_6m_chart"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/six_month"
+            android:textSize="12sp"/>
+
+        <View
+            android:background="#f3f3f3"
+            android:layout_width="1dip"
+            android:layout_height="fill_parent"/>
+
+        <Button
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:id="@+id/button_1y_chart"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/one_year"
+            android:textSize="12sp"/>
+
+        <View
+            android:background="#f3f3f3"
+            android:layout_width="1dip"
+            android:layout_height="fill_parent"/>
+
+        <Button
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:id="@+id/button_5y_chart"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/five_year"
+            android:textSize="12sp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

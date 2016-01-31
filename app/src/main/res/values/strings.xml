@@ -1,0 +1,45 @@
+<!--
+  Copyright 2014 Robert Baptiste
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+-->
+
+<resources>
+
+    <!-- Home Screen -->
+    <string name="app_name">Forexperts</string>
+    <string name="title_market_section">MARKET</string>
+    <string name="title_portfolio_section">PORTFOLIO</string>
+    <string name="title_news_section">NEWS</string>
+    <string name="title_error_section">ERROR</string>
+    <string name="refresh">Refresh</string>
+    <string name="settings">Settings</string>
+
+    <!-- Portfolio Screen -->
+    <string name="add_ticker">+ ADD TICKER</string>
+    <string name="search_stock">Search stock</string>
+    <string name="sort_order">Sort order</string>
+    <string name="add_stock">Add stock</string>
+    <string name="delete">Delete from portfolio</string>
+
+    <!-- Stock Detail Screen -->
+    <string name="chart_description">Historical chart</string>
+    <string name="one_day">1D</string>
+    <string name="five_day">5D</string>
+    <string name="one_month">1M</string>
+    <string name="six_month">6M</string>
+    <string name="one_year">1Y</string>
+    <string name="five_year">5Y</string>
+    <string name="max">MAX</string>
+
+</resources>

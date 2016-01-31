@@ -1,0 +1,41 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="fr.carykatz.forexperts" >
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
+    <application
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:icon="@drawable/ic_launcher"
+        android:theme="@style/MyTheme" >
+
+        <activity
+            android:name="fr.forexperts.ui.HomeActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+
+        <activity
+            android:name="fr.forexperts.ui.GraphActivity"
+            android:parentActivityName="fr.forexperts.ui.HomeActivity"
+            android:screenOrientation="landscape" >
+        </activity>
+
+        <activity
+            android:name="fr.forexperts.ui.SettingsActivity"
+            android:parentActivityName="fr.forexperts.ui.HomeActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <service android:name="fr.forexperts.service.DataService" />
+
+    </application>
+
+</manifest>

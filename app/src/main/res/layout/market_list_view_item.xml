@@ -1,0 +1,110 @@
+<!--
+  Copyright 2014 Robert Baptiste
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              android:baselineAligned="false"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:paddingTop="8dp"
+              android:paddingBottom="8dp"
+              android:paddingLeft="24dp"
+              android:paddingRight="24dp">
+
+        <View
+            android:id="@+id/colorBar_view"
+            android:layout_width="8dp"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_vertical"
+            android:background="#3e7ae0" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/name_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="top"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    android:maxLines="1"
+                    android:ellipsize="end" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="20sp"
+                    android:maxLines="1"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:id="@+id/netVariation_view"
+                    android:textColor="#629c21"
+                    android:textStyle="bold"
+                    android:layout_weight="55" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="20sp"
+                    android:maxLines="1"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:id="@+id/percentVariation_view"
+                    android:textColor="#629c21"
+                    android:textStyle="bold"
+                    android:layout_weight="45" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="50">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:gravity="center|right"
+                android:textSize="30sp"
+                android:maxLines="1"
+                android:id="@+id/price_view"
+                android:textColor="#1f96ca"
+                android:textStyle="bold"
+                android:ellipsize="end" />
+
+        </LinearLayout>
+
+</LinearLayout>
